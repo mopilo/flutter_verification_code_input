@@ -11,7 +11,7 @@ class VerificationCodeInput extends StatefulWidget {
       {Key key,
       this.onCompleted,
       this.keyboardType = TextInputType.number,
-      this.length = 4,
+      this.length = 6,
       this.itemDecoration,
       this.itemSize = 50,
       this.textStyle = const TextStyle(fontSize: 25.0, color: Colors.black)})
@@ -67,7 +67,7 @@ class _VerificationCodeInputState extends State<VerificationCodeInput> {
           counterText: "",
           contentPadding: EdgeInsets.all(((widget.itemSize * 2) / 10)),
           errorMaxLines: 1,
-          fillColor: Colors.black),
+          fillColor: Color(0XFF049D3F)),
       onChanged: (String value) {
         if (value.length > 1 && index < widget.length ||
             index == 0 && value.isNotEmpty) {
