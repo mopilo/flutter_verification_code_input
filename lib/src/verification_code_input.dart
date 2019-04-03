@@ -65,9 +65,9 @@ class _VerificationCodeInputState extends State<VerificationCodeInput> {
           border: (border ? null : InputBorder.none),
           enabled: _currentIdex == index,
           counterText: "",
-          contentPadding: EdgeInsets.all(((widget.itemSize * 2) / 10)),
+          contentPadding: EdgeInsets.all(((widget.itemSize * 2) / 20)),
           errorMaxLines: 1,
-          fillColor: Color(0XFF049D3F)),
+          fillColor: Colors.black),
       onChanged: (String value) {
         if (value.length > 1 && index < widget.length ||
             index == 0 && value.isNotEmpty) {
@@ -132,7 +132,7 @@ class _VerificationCodeInputState extends State<VerificationCodeInput> {
   List<Widget> _buildListWidget() {
     List<Widget> listWidget = List();
     for (int index = 0; index < widget.length; index++) {
-      double left = (index == 0) ? 0.0 : (widget.itemSize / 10);
+      double left = (index == 0) ? 0.0 : (widget.itemSize / 20);
       listWidget.add(Container(
           height: widget.itemSize,
           width: widget.itemSize,
