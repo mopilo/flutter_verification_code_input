@@ -67,7 +67,7 @@ class _VerificationCodeInputState extends State<VerificationCodeInput> {
           counterText: "",
           contentPadding: EdgeInsets.all(((widget.itemSize * 2) / 20)),
           errorMaxLines: 1,
-          fillColor: Colors.black),
+          fillColor: Color(0XFF049D3F)),
       onChanged: (String value) {
         if (value.length > 1 && index < widget.length ||
             index == 0 && value.isNotEmpty) {
